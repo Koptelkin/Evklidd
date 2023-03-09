@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
     <title>Евклид</title>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 </head>
 <body>
     <header>
@@ -57,32 +64,92 @@
     </header>
     <main>
         <section class="section-hero">
-            <div class="section-hero-container">
-                <h1 class="main-title section-hero-title">
-                    Проектные решения любой сложности
-                </h1>
-                <p class="section-hero-info">
-                    Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
-                </p>
-                <button class="orange-button section-hero-button">Заказать расчет</button>
-                <div class="section-hero-click">
-                    <button class="button-reset section-hero-clickable">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="1"/>
-                        </svg>
-                    </button>
-                    <button class="button-reset section-hero-clickable">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4"/>
-                        </svg>
-                    </button>
-                    <button class="button-reset section-hero-clickable">
-                        <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4"/>
-                        </svg>
-                    </button>
-                </div>
+            <div class="section-hero-container swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide slide1">
+                        <h1 class="main-title section-hero-title">
+                            Проектные решения любой сложности
+                        </h1>
+                        <p class="section-hero-info">
+                            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                        </p>
+                        <button class="orange-button section-hero-button">Заказать расчет</button>
+                        <!-- <div class="section-hero-click">
+                            <button class="button-reset section-hero-clickable">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="1"/>
+                                </svg>
+                            </button>
+                            <button class="button-reset section-hero-clickable">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4"/>
+                                </svg>
+                            </button>
+                            <button class="button-reset section-hero-clickable">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4"/>
+                                </svg>
+                            </button>
+                        </div>   -->
+                    </div>
+                    <div class="swiper-slide slide2">
+                        <h1 class="main-title section-hero-title">
+                            Проектные решения любой сложности
+                        </h1>
+                        <p class="section-hero-info">
+                            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                        </p>
+                        <button class="orange-button section-hero-button">Заказать расчет</button>
+                        <!-- <div class="section-hero-click">
+                            <button class="button-reset section-hero-clickable">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="1"/>
+                                </svg>
+                            </button>
+                            <button class="button-reset section-hero-clickable">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4"/>
+                                </svg>
+                            </button>
+                            <button class="button-reset section-hero-clickable">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4"/>
+                                </svg>
+                            </button>
+                        </div>   -->
+                    </div>
+                    <div class="swiper-slide slide3">
+                        <h1 class="main-title section-hero-title">
+                            Проектные решения любой сложности
+                        </h1>
+                        <p class="section-hero-info">
+                            Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                        </p>
+                        <button class="orange-button section-hero-button">Заказать расчет</button>
+                        <!-- <div class="section-hero-click">
+                            <button class="button-reset section-hero-clickable">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="1"/>
+                                </svg>
+                            </button>
+                            <button class="button-reset section-hero-clickable">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4"/>
+                                </svg>
+                            </button>
+                            <button class="button-reset section-hero-clickable">
+                                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="7.5" cy="7.5" r="7.5" fill="white" fill-opacity="0.4"/>
+                                </svg>
+                            </button>
+                        </div>   -->
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>     
             </div>
+            <script src="swiper.js"></script>
         </section>
         <section class="section-description">
             <div class="container">
@@ -168,12 +235,12 @@
                             нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется,
                             призваны к ответу.
                         </p>
-                        <button class="orange-button">Подробнее</button>
+                        <button class="orange-button section-stages-button">Подробнее</button>
                         <button class="gray-button">Договор</button>
                     </div>
                     <div class="section-stages-right">
-                        <img src="images/Rectangle 18.png" alt="Проводим консультацию" class="section-stages-wrapper-image">
-                        <img src="images/Rectangle 18.jpg" alt="Проводим консультацию" class="section-stages-wrapper-image-media">
+                        <img src="images/Rectangle 18 (1).png" alt="Проводим консультацию" class="section-stages-wrapper-image">
+                        <img src="images/Rectangle 18 (1).jpg" alt="Проводим консультацию" class="section-stages-wrapper-image-media">
                     </div>
                 </div>
             </div>
@@ -181,64 +248,63 @@
         <section class="section-faq">
             <div class="container section-faq-container">
                 <h1 class="main-title section-faq-title">Часто задаваемые вопросы</h1>
-                <ul class="section-faq-list">
-                    <li class="section-faq-item">
+                <div class="section-faq-list" id="accordion">
+                    <h3>Из чего формируется конечная стоимость проекта?</h3>
+                    <div class="section-faq-item">
                         <p class="section-faq-item-text">
-                            Из чего формируется конечная стоимость проекта?
+                            Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас 
+                            к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы.
+                            Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований.
+                            А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского
+                            типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные
+                            признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны
+                            как претенденты на роль ключевых факторов.
                         </p>
-                        <span class="section-faq-item-info">
-                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="section-faq-item-info-icon">
-                                <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-                            </svg>
-                        </span>
-                    </li>
-                    <li class="section-faq-item">
+                    </div>
+                    <h3>У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
+                    <div class="section-faq-item">
                         <p class="section-faq-item-text">
-                            У меня есть свой проект. Сможем ли мы его доработать / реализовать?
+                            Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки
+                            победы институционализации набирают популярность среди определённых слоёв населения,
+                            а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы,
+                            а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены
+                            в исключительно положительном свете.
                         </p>
-                        <span class="section-faq-item-info">
-                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="section-faq-item-info-icon">
-                                <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-                            </svg>
-                        </span>
-                    </li>
-                    <li class="section-faq-item">
+                    </div>
+                    <h3>Я выбираю между разными компаниями. В чём ваше отличие?</h3>
+                    <div class="section-faq-item">
                         <p class="section-faq-item-text">
-                            Я выбираю между разными компаниями. В чём ваше отличие?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo tempora architecto ipsum excepturi dolores eaque.
+                            Saepe maxime veritatis nihil beatae? Exercitationem suscipit voluptatibus odio consectetur ad excepturi dolorem vel
+                            ipsum dolore dicta! Autem earum aut, accusantium molestiae nam facilis corporis odio necessitatibus! Sapiente recusandae
+                            deleniti praesentium inventore odit asperiores dolorem.
                         </p>
-                        <span class="section-faq-item-info">
-                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="section-faq-item-info-icon">
-                                <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-                            </svg>
-                        </span>
-                    </li>
-                    <li class="section-faq-item">
+                    </div>
+                    <h3>Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</h3>
+                    <div class="section-faq-item">
                         <p class="section-faq-item-text">
-                            Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? 
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo tempora architecto ipsum excepturi dolores eaque.
+                            Saepe maxime veritatis nihil beatae? Exercitationem suscipit voluptatibus odio consectetur ad excepturi dolorem vel
+                            ipsum dolore dicta! Autem earum aut, accusantium molestiae nam facilis corporis odio necessitatibus! Sapiente recusandae
+                            deleniti praesentium inventore odit asperiores dolorem.
                         </p>
-                        <span class="section-faq-item-info">
-                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="section-faq-item-info-icon">
-                                <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-                            </svg>
-                        </span>
-                    </li>
-                    <li class="section-faq-item">
+                    </div>
+                    <h3>Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
+                    <div class="section-faq-item">
                         <p class="section-faq-item-text">
-                            Могу ли я вернуть деньги на каком-либо из этапов работ?
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo tempora architecto ipsum excepturi dolores eaque.
+                            Saepe maxime veritatis nihil beatae? Exercitationem suscipit voluptatibus odio consectetur ad excepturi dolorem vel
+                            ipsum dolore dicta! Autem earum aut, accusantium molestiae nam facilis corporis odio necessitatibus! Sapiente recusandae
+                            deleniti praesentium inventore odit asperiores dolorem.
                         </p>
-                        <span class="section-faq-item-info">
-                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" class="section-faq-item-info-icon">
-                                <ellipse cx="25" cy="25" rx="25" ry="25" fill="#ECECEC"/>
-                                <path fill-rule="evenodd" clip-rule="evenodd" d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z" fill="#666666"/>
-                            </svg>
-                        </span>
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
+            <script>
+                $( function() {
+                    $( "#accordion" ).accordion();
+                } );
+                </script>
         </section>
     </main>
     <footer>

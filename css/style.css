@@ -31,7 +31,7 @@
     --default: #333333;
     --footer-gray: #CACACA;
     --orange: #FF9900;
-    --footer: #222222;
+    --footer: #000000;
     --footer-form: #414141;
     --red: #E1670E;
     --gray: #666666;
@@ -73,6 +73,7 @@ a {
     font-size: 16px;
     line-height: 20px;
     color: var(--white);
+    border-radius: 16px;
 }
 
 .orange-button:hover, .orange-button:focus {
@@ -93,6 +94,7 @@ a {
     line-height: 20px;
     color: var(--default);
     margin-left: 30px;
+    border-radius: 16px;
 }
 
 .gray-button:hover, .gray-button:focus {
@@ -116,6 +118,7 @@ a {
     font-size: 16px;
     line-height: 20px;
     color: var(--white);
+    border-radius: 16px;
 }
 
 .empty-button:hover, .empty-button:focus {   
@@ -154,6 +157,7 @@ a {
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 32px 32px;
 }
 
 .header-logo {
@@ -228,12 +232,14 @@ a {
 
 .section-hero-container {
     max-width: 1770px;
-    margin: auto;
+    margin: 50px auto 0;
     padding: 0 77px;
     position: relative;
     max-height: 668px;
     background: url(../images/low-angle-photo-of-balconies-2462015\ 1.png);
     background-size: cover;
+    background-position: center center;
+    border-radius: 32px;
 }
 
 .section-hero-title {
@@ -265,7 +271,7 @@ a {
     font-weight: 700;
     font-size: 23.4581px;
     line-height: 29px;
-    margin-bottom: 96px;
+    margin-bottom: 150px;
 }
 
 .section-hero-click {
@@ -297,7 +303,7 @@ h1 {
 }
 
 .section-description-title {
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 20px;
 }
 
@@ -324,31 +330,32 @@ h1 {
 }
 
 .section-benefits-left {
-    max-width: 1024px;
+    max-width: 868px;
     min-height: 622px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(../images/Rectangle\ 2.jpg);
     background-size: cover;
-    margin-right: 40px;
+    background-position: center;
+    border-radius: 32px;
 }
 
 .section-benefits-image {
-    position: relative;
-    top: 426px;
+    position: sticky;
+    height: 207px;
+    top: 100%;
 }
 
 .section-benefits-image-info {
-    max-height: 196px;
-    padding: 50px;
+    height: 100%;
+    padding: 0 50px 0 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: rgba(0, 0, 0, 0.4);
-    
+    border-radius: 32px;
 }
 
 .section-benefits-image-text {
     max-width: max-content;
-    max-height: 310px;
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -358,8 +365,8 @@ h1 {
 }
 
 .section-benefits-right {
-    /* max-width: 100%; */
     width: 48.5%;
+    margin-left: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -371,17 +378,17 @@ h1 {
     align-items: center;
     justify-content: space-between;
     height: 47%;
-    width: 100%;
     border: 1px solid var(--footer-gray);
     overflow: hidden;
+    border-radius: 32px;
 }
 
 .section-benefits-item-image {
-    margin: 65px 50px 65px 60px;
+    margin: 65px 40px 65px 40px;
 }
 
 .section-benefits-item-info {
-    margin: 0 120px 0 0;
+    margin: 0 30px 0 0;
 }
 
 .section-benefits-item-info-title {
@@ -410,12 +417,15 @@ h1 {
 }
 
 .section-stages-list {
+    display: flex;
+    justify-content: space-between;
     margin: 50px 0 45px 0;
-    display: inline-block;
+    width: 25%;
+    white-space: nowrap;
 }
 
 .section-stages-list-link:not(:last-child) {
-    margin-right: 85px;
+    margin-right: 60px;
 }
 
 .section-stages-list-link:hover {
@@ -445,6 +455,7 @@ h1 {
 .section-stages-left {
     max-width: 758px;
     height: 100%;
+    margin-right: 50px;
 }
 
 .section-stages-wrapper-title {
@@ -554,7 +565,7 @@ h1 {
     margin: 0 75px;
     padding: 50px 0;
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -620,7 +631,8 @@ h1 {
 }
 
 .footer-form {
-    margin-right: 236px;
+    margin-right: 226px;
+    max-width: 570px;
 }
 
 .footer-form-title {
@@ -635,7 +647,7 @@ h1 {
 
 .input, .input-big {
     margin-top: 25px;
-    width: 570px;
+    width: 100%;
     background-color: var(--footer-form);
     font-style: normal;
     font-weight: 400;
@@ -644,6 +656,7 @@ h1 {
     color: var(--footer-gray);
     padding: 0 24px;
     text-align: start;
+    border-radius: 16px;
 }
 
 .input {
@@ -675,31 +688,143 @@ h1 {
 }
 
 .footer-info {
-    margin: auto 0;
+    margin: 0;
     max-width: 100%;
     max-height: 100%;
 }
 
 .footer-info-text {
-    max-height: 384px; 
+    max-height: 384px;
+    max-width: 450px; 
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 2;
     color: var(--footer-gray);
+    margin: 0;
 }
 
-@media (min-width: 1025px) and (max-width: 1920px) {
+@media (min-width: 1025px) and (max-width: 1919px) {
 
     .section-hero-container {
-        margin: 0 75px;
+        margin: 50px 75px 0;
+    }
+
+    .footer-reference {
+        margin-right: 125px;
+    }
+
+    .footer-form {
+        margin-right: 100px;
+        max-width: 570px;
     }
 
 }
 
+@media (max-width: 1760px) and (min-width: 1025px) {
+
+    .section-benefits-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-benefits-right {
+        max-width: 100%;
+        width: auto;
+        margin-left: 0px;
+    }
+
+    .section-benefits-left {
+        max-width: 100%;
+    }
+
+    .section-benefits-item {
+        min-width: 55%;
+        margin-top: 30px;
+    }
+
+    .section-benefits-image-text {
+        max-width: 55%;
+    }
+
+}
+
+@media (max-width: 1760px) and (min-width: 1301px) {
+    .empty-button {
+        padding: 30px 50px;
+        width: auto;
+        height: auto;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1550px) {
+    .footer-info {
+        display: none;
+    }
+
+    .footer-form {
+        max-width: 570px;
+        margin-right: 0px;
+    }
+
+    .footer-reference {
+        margin-right: 100px;
+    }
+
+    .footer-wrapper {
+        justify-content: space-around;
+        margin: 0 50px;
+    }
+
+    .section-stages-left {
+        height: inherit;
+        margin-right: 30px;
+    }
+
+    .section-stages-right {
+        min-width: 550px;
+    }
+
+    .footer-button {
+        padding: 19px 42px;
+    }
+
+}
+
+
 @media (max-width: 1300px) {
     .header-nav-item:not(:last-child) {
         margin-right: 40px;
+    }
+
+    .container {
+        padding: 0 50px;
+    }
+
+    .section-hero-container {
+        margin: 50px 50px 0;
+    }
+
+}
+
+@media (max-width: 1160px) and (min-width: 1025px) {
+
+    .section-hero-title {
+        font-size: 60px;
+        line-height: 73px;
+    }
+
+    .section-hero-info {
+        font-size: 20px;
+    }
+
+    .gray-button {
+        margin-left: 0px;
+    }
+
+    .section-stages-left {
+        margin-right: 10px;
     }
 }
 
@@ -725,16 +850,20 @@ h1 {
         background-size: cover;
     }
 
+    .swiper-slide {
+        padding: 0 50px;
+    }
+
     .section-hero-title {
         font-size: 60px;
         line-height: 73px;
-        margin: 160px auto 0;
+        margin: 130px auto 0;
         min-height: auto;
     }
 
     .section-hero-info {
         font-size: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
         margin-top: 16px;
     }
 
@@ -747,14 +876,19 @@ h1 {
     }
 
     .section-benefits-left {
+        max-width: 100%;
         margin-right: 0px;
     }
 
     .section-benefits-right {
-        width: 100%;
+        max-width: 100%;
+        width: auto;
+        margin-left: 0px;
     }
 
     .section-benefits-item {
+        width: 100%;
+        height: auto;
         margin-top: 32px;
     }
 
@@ -762,12 +896,36 @@ h1 {
         margin-right: 35px;
     }
 
+    .section-benefits-item-info-title {
+        white-space: normal;
+    }
+
+    .section-stages-container {
+        margin-top: 80px;
+    }
+
+    .section-stages-list {
+        width: fit-content;
+    }
+
     .section-stages-left {
-        margin-right: 50px;
+        margin-right: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .section-stages-right {
+        min-width: auto;
     }
 
     .section-stages-wrapper-image {
         display: none;
+    }
+
+    .section-stages-wrapper-text {
+        width: auto;
+        font-size: 15px;
     }
 
     .section-stages-wrapper-image-media {
@@ -775,13 +933,18 @@ h1 {
         height: 100%;
     }
 
-    .section-faq-item-text {
-        font-size: 20px;
-        line-height: 32px;
+    .section-stages-button {
+        width: 200px;
     }
 
     .gray-button {
-        margin-left: 20px;
+        margin: 20px 0 0 0;
+        width: 160px;
+    }
+
+    .section-faq-item-text {
+        font-size: 20px;
+        line-height: 32px;
     }
 
     .footer-wrapper {
@@ -793,17 +956,22 @@ h1 {
     }
 
     .input, .input-big {
-        width: 490px;
+        width: 100%;
     }
 
     .footer-button {
         padding-left: 25px;
         padding-right: 25px;
         font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .input-check-text {
+        white-space: normal;
     }
 
     .footer-reference {
-        margin-right: 130px;
+        margin-right: 25px;
     }
 
     .footer-form {
@@ -811,16 +979,32 @@ h1 {
     }
 }
 
-@media (max-width: 768px) {
+
+@media (max-width: 810px) {
+
+    .header-logo {
+        margin-left: 0px;
+    }
+
+    .header-nav-search {
+        margin-left: 0px;
+    }
+
+    .section-hero-title {
+       margin-top: 100px; 
+    }
+
+    .section-hero-button {
+        margin: 0;
+    }
+
     .section-hero-container {
-        margin: 0 50px;
+        margin: 40px 35px 0;
         padding: 0 40px;
-        background: url(../images/low-angle-photo-of-balconies-2462015\ 1\ \(1\).jpg);
-        background-size: cover;
     }
 
     .container {
-        padding: 0 50px;
+        padding: 0 35px;
     }
 
     .section-hero-title {
@@ -833,31 +1017,38 @@ h1 {
         line-height: 24px;
     }
 
+    .section-description-title {
+        margin-top: 80px;
+    }
+
+    .section-benefits-image {
+        height: 50%;
+    }
+
     .section-benefits-image-info {
-        padding: 34px 40px;
+        padding: 20px 40px;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
     .section-benefits-image-text {
-        margin: 0 47px 0 0;
+        margin: 0 0 10px;
         font-size: 15px;
+        text-align: center;
     }
 
     .empty-button {
         font-size: 15px;
     }
 
-    .section-benefits-left {
-        background-position-x: -150px;
-    }
-
     .section-benefits-item-image {
         width: 115px;
         height: 100px;
-        margin: 0 16px 0 20px;
+        margin: 20px 16px 0 20px;
     }
 
     .section-benefits-item-info {
-        margin: 35px 48px 35px 0;
+        margin: 35px 20px 35px 20px;
     }
 
     .section-stages-wrapper {
@@ -865,19 +1056,33 @@ h1 {
     }
 
     .section-stages-right  {
-        min-height: 284px;
+        min-height: 184px;
     }
 
     .section-stages-left {
         margin: 38px 0 0 0;
+        display: block;
+    }
+
+    .section-stages-list {
+        width: 100%;
+        margin: 30px 0;
     }
 
     .section-stages-list-link:not(:last-child) {
-        margin-right: 125px;
+        margin-right: 25px;
     }
 
     .section-stages-wrapper-image {
         display: block;
+    }
+
+    .section-stages-wrapper-text {
+        margin: 8px 0 20px 0;
+    }
+
+    .gray-button {
+        margin: 0 0 0 30px;
     }
 
     .section-stages-wrapper-image-media {
@@ -898,6 +1103,150 @@ h1 {
 
     .footer-reference {
         margin-top: 50px;
+    }
+}
+
+@media (max-width: 700px) {
+    .section-benefits-item {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+    
+    .header-logo {
+        margin-left: 20px;
+    }
+
+    .header-logo-img {
+        width: 150px;
+    }
+
+    .header-nav-burger {
+        margin-left: 20px;
+    }
+
+    .header-nav-search {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .section-hero-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 20px 0;
+        padding: 0 30px;
+        height: 60%;
+    }
+
+    .section-hero-title {
+        margin-top: 80px;
+        font-size: 30px;
+        line-height: 34px;
+        text-align: center;
+    }
+
+    .section-hero-click {
+        left: auto;
+    }
+
+    .section-hero-info {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .orange-button {
+        width: 180px;
+        font-size: 14px;
+        padding: 15px 12px;
+    }
+
+    .section-hero-button {
+        margin-bottom: 96px;
+        position: unset;
+    }
+
+    .section-description-title {
+        margin-top: 60px;
+    }
+
+    .footer-wrapper {
+        margin: 0 20px;
+        align-items: center;
+    }
+
+    .footer-reference {
+        margin-right: 0px;
+    }
+
+    .footer-confirmation {
+        flex-direction: column;
+    }
+
+    .footer-agreement {
+        margin-top: 16px;
+    }
+
+    .section-benefits-left {
+        min-height: 459px;
+    }
+
+    .section-benefits-item {
+        align-items: start;
+    }
+
+    .section-benefits-item-info {
+        margin: 15px;
+    }
+
+    .section-benefits-item-image {
+        margin: 15px 0 15px 15px;
+    }
+
+    .section-stages-list-link:not(:last-child) {
+        margin-right: 10px;
+    }
+
+    .section-benefits-image-info {
+        padding: 20px;
+    }
+
+    .section-stages-container {
+        margin-top: 60px;
+    }
+
+    .section-stages-list {
+        margin: 20px 0;
+    }
+
+    .section-stages-right {
+        min-height: 150px;
+    }
+
+    .section-stages-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gray-button {
+        margin: 15px 0 0 0;
+        font-size: 14px;
+        padding: 15px 12px;
+    }
+
+    .footer-form-title {
+        font-size: 30px;
+        line-height: 36px;
     }
 }
 
@@ -994,7 +1343,6 @@ h1 {
         font-size: 12px;
         line-height: 15px;
         padding: 12px 30px;
-        margin-left: 10px;
     }
 
     .orange-button {
@@ -1087,6 +1435,7 @@ h1 {
     }
 
     .section-benefits-image {
+        position: relative;
         top: 200px;
     }
 
@@ -1103,6 +1452,8 @@ h1 {
         margin: 0;
         font-size: 14px;
         margin-bottom: 8px;
+        font-weight: 400;
+        text-align: left;
     }
 
     .empty-button {
@@ -1128,7 +1479,7 @@ h1 {
     }
 
     .section-hero-container {
-        margin: 0 15px;
+        margin: 30px 15px 0;
         padding: 0 22px;
         width: 290px;
         height: 100%;
@@ -1160,7 +1511,6 @@ h1 {
 
     .section-hero-button {
         margin-bottom: 63px;
-        transform: translateX(45.5px);
     }
 
     .header-container {
@@ -1172,7 +1522,7 @@ h1 {
     }
 
     .header-logo {
-        margin: 0 0 0 60px;
+        margin: 0 0 0 30px;
         
     }
 
@@ -1182,6 +1532,42 @@ h1 {
     }
 
     .header-nav-search {
-        margin: 0 15px 0 66px;
+        margin: 0 15px 0 0;
     }
+}
+
+.swiper-slide {
+    padding: 0 65px;
+    width: auto;
+}
+
+.swiper-wrapper {
+    box-sizing: border-box;
+}
+
+.swiper-pagination {
+    --swiper-pagination-bullet-width: 12px;
+    --swiper-pagination-bullet-height: 12px;
+    --swiper-pagination-fraction-color: #000000;
+    --swiper-pagination-bullet-horizontal-gap: 15px;
+    --swiper-theme-color: var(--white);
+    --swiper-pagination-bottom: 20px;
+}
+
+.slide1 {
+    background-image: url(../images/low-angle-photo-of-balconies-2462015\ 1.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide2 {
+    background-image: url(../images/hero-pic-1920-2.png);
+    background-position: center center;
+    background-size: cover;
+}
+
+.slide3 {
+    background-image: url(../images/hero-pic-1920-3.png);
+    background-position: center center;
+    background-size: cover;
 }
